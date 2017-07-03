@@ -15,7 +15,7 @@
 
 
  var isPrime = (num)=>{
-    for ( var i = 2; i < num; i++ ) {
+    for ( let i = 2; i < num; i++ ) {
         if ( num % i === 0 && num !== 2 ) {
             return false;
         }
@@ -26,8 +26,8 @@
 let getPrimes= (n)=> {
   if(typeof n !== 'number' || n === []){
     var arr = false;
-  }else{var arr = [];
-  for ( var i = 2; i < n; i+=1 ) {
+  }else{let arr = [];
+  for ( let i = 2; i < n; i+=1 ) {
       if ( isPrime(i) ) {
           arr.push(i);
       }
